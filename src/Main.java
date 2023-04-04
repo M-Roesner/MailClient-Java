@@ -45,7 +45,6 @@ public class Main {
         //SMTP: mail.beck-homes.com
         //SMTP-Port: 465
 
-        // dies ist auch ein kommentar für commit
 
 
 
