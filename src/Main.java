@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public Properties readProperties() throws FileNotFoundException, IOException {
+        //TODO: make it generic
         Properties props = new Properties();
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
         System.out.println(rootPath.split("out")[0]);
@@ -44,11 +45,5 @@ public class Main {
         //axv8@50T4
         //SMTP: mail.beck-homes.com
         //SMTP-Port: 465
-
-
-
-
-
-
     }
 }
