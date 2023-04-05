@@ -17,7 +17,29 @@ public class Main {
         return file.exists();
     }
     public Properties requestProperties(){
-        return null;
+        Properties props = new Properties();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Create new properties:");
+
+        System.out.print("SMTP-Hostname > ");
+        String hostname = sc.nextLine();
+        props.put("mail.smtp.host", hostname);
+
+        System.out.print("From E-Mail > ");
+        String fromMail = sc.nextLine();
+        props.put("mail.smtp.from", fromMail);
+
+        System.out.print("Username > ");
+        String username = sc.nextLine();
+        props.put("mail.smtp.username", username);
+
+        System.out.print("Password > ");
+        String password = sc.nextLine();
+        props.put("mail.smtp.password", password);
+
+//        System.out.println(props);
+        return props;
     }
     public void writeProperties(Properties properties){
 
